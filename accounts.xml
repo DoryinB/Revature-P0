@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<ArrayOfCustomer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Customer>
+    <firstName>fred</firstName>
+    <lastName>belotte</lastName>
+    <userName>classified</userName>
+  </Customer>
+  <Customer>
+    <firstName>tracy</firstName>
+    <lastName>mcgrady</lastName>
+    <userName>hof</userName>
+  </Customer>
+  <Customer>
+    <firstName>michael</firstName>
+    <lastName>jordan</lastName>
+    <userName>goat</userName>
+  </Customer>
+  <Customer>
+    <firstName>dory</firstName>
+    <lastName>bed</lastName>
+    <userName>gar</userName>
+  </Customer>
+</ArrayOfCustomer>
