@@ -1,11 +1,12 @@
 using System.Collections.Generic;
 using System;
 
+
 namespace PizzaBox.Domain
 {
   public class Crust
   {
-    private List<string> crust = new List<string> {"Thin", "Thick", "Stuffed"};
+    private static List<string> crust = new List<string> {"Thin", "Thick", "Stuffed"};
     private decimal cost;
     private string choice;
     char holder;
@@ -53,6 +54,13 @@ namespace PizzaBox.Domain
     public string returnCrust()
     {
       return choice;
+    }
+    public static void displayCrusts()
+    {
+      foreach (var c in crust)
+      {
+        System.Console.Write(c+", ");
+      }
     }
   }
 }

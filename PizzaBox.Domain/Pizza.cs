@@ -68,7 +68,9 @@ namespace PizzaBox.Domain
       {
         if (toppingsMax<5)
         {
-        System.Console.WriteLine("Which topping would you like to add?");
+        System.Console.WriteLine("Which topping would you like to add?\n");
+        Topping.displayToppings();
+        System.Console.WriteLine("\n\n");
         string a = System.Console.ReadLine();
         if(Topping.toppingExist(a))
           {

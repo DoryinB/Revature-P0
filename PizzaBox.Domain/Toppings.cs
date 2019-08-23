@@ -16,5 +16,13 @@ namespace PizzaBox.Domain
       return false;
     }
 
+    public static void displayToppings()
+    {
+      foreach (var c in toppingsList)
+      {
+        System.Console.Write(c+", ");
+      }
+    }
+
   }
 }

@@ -28,6 +28,7 @@ namespace PizzaBox.Domain
         else if (choice=="o")
         {
           displayOrder();
+          System.Console.WriteLine(returnTotalCost()+"\n\n");
         }
         else if (choice !="d")
         {
@@ -45,6 +46,11 @@ namespace PizzaBox.Domain
 
     public decimal returnTotalCost()
     {
+      totalCost=0.00m;
+      foreach (var p in pizzas)
+      {
+        totalCost=totalCost+p.returnCost();
+      }
       return totalCost;
     }
 
@@ -61,6 +67,11 @@ namespace PizzaBox.Domain
       pizzas.Add(p);
       totalCost=totalCost+p.returnCost();
       displayOrder();
+    }
+
+    public void displayCost()
+    {
+      System.Console.WriteLine(totalCost);
     }
   }
 }
